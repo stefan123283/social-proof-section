@@ -11,13 +11,13 @@ The designs were created to the following widths:
 
 ### Primary
 
-Very Dark Magenta: hsl(300, 43%, 22%) #502050 (se foloseste la h1, .rated-text, .reviews-grid)
-Soft Pink: hsl(333, 80%, 67%) #ee68a4 (se foloseste la .user-description)
+Very Dark Magenta: hsl(300, 43%, 22%) #502050 
+Soft Pink: hsl(333, 80%, 67%) #ee68a4 
 
 ### Neutral
 
-Dark Grayish Magenta: hsl(303, 10%, 53%) #937b92 (se foloseste la .short-description)
-Light Grayish Magenta: hsl(300, 24%, 96%) #f7f2f7 (se foloseste la .user-review)
+Dark Grayish Magenta: hsl(303, 10%, 53%) #937b92 
+Light Grayish Magenta: hsl(300, 24%, 96%) #f7f2f7 
 White: hsl(0, 0%, 100%)
 
 ## Typography
@@ -28,5 +28,5 @@ White: hsl(0, 0%, 100%)
 
 ### Font
 
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan) font-family: 'League Spartan', sans-serif;
-- Weights: 400, 500, 700 (500 se foloseste la .rated-text, 700 se foloseste la .user-name)
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan) 
+- Weights: 400, 500, 700 
