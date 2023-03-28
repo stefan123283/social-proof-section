@@ -1,0 +1,519 @@
+/*--------------- 
+Josh Comeau Reset
+---------------*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Avoid text overflows
+  */
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+/*--------------- 
+Josh Comeau Reset
+---------------*/
+
+/*----------- 
+Common styles 
+-----------*/
+
+.site-description,
+.stars-text-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-stars,
+.user-details,
+.user-description {
+  display: flex;
+}
+
+.site-description,
+.reviews-stars {
+  justify-content: center;
+}
+
+.site-description,
+.last-item {
+  margin-bottom: 10%;
+}
+
+.short-description,
+.user-review {
+  margin-top: 5%;
+}
+
+.stars-text-flex,
+.reviews-grid {
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+h1,
+.rated-text,
+.user-name {
+  font-weight: 700;
+}
+
+h1,
+.rated-text {
+  color: #502050;
+}
+
+.user-name,
+.user-review {
+  color: #f7f2f7;
+}
+
+/*----------- 
+Common styles 
+-----------*/
+
+.social-section {
+  min-height: 100vh;
+  padding: 15% 10%;
+  font-family: "League Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 16%, 100% 33.5%;
+}
+
+.site-description {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 0.8;
+  width: 80%;
+}
+
+.short-description {
+  color: #937b92;
+  font-weight: 500;
+}
+
+.stars-text-flex {
+  background-color: #f7f2f7;
+  padding: 3% 0;
+}
+
+.reviews-stars {
+  gap: 10%;
+}
+
+.rated-text {
+  margin-top: 2%;
+}
+
+.second-row-flex {
+  margin-top: 14%;
+}
+
+.reviews-grid {
+  background-color: #502050;
+  padding: 10% 5%;
+}
+
+.user-details {
+  gap: 5%;
+}
+
+.user-details img {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+}
+
+.pink-text {
+  color: #ee68a4;
+}
+
+.user-description {
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    width: 65%;
+  }
+
+  .reviews-stars img {
+    width: 25px;
+  }
+
+  .user-details img {
+    height: 52px;
+    width: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+
+  h1 {
+    width: 55%;
+  }
+
+  .reviews-stars img {
+    width: 30px;
+  }
+
+  .user-details img {
+    height: 58px;
+    width: 58px;
+  }
+}
+
+@media (min-width: 992px) {
+  /*----------- 
+Common styles 
+-----------*/
+
+  html::before,
+  html::after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 1600px;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  .first-row-flex,
+  .start-text-flex-desktop,
+  .second-row-flex {
+    display: flex;
+  }
+
+  .user-description,
+  .start-text-flex-desktop {
+    flex-direction: column;
+  }
+
+  .second-row-flex,
+  .reviews-grid {
+    height: 200px;
+  }
+
+  h1,
+  .short-description {
+    width: 330px;
+  }
+
+  .short-description,
+  .start-text-flex-desktop,
+  .user-review {
+    margin-top: 20px;
+  }
+
+  .user-description,
+  .pink-text {
+    margin-top: -3px;
+  }
+
+  .short-description,
+  .rated-text,
+  .reviews-grid {
+    font-size: 0.86rem;
+  }
+
+  /*----------- 
+Common styles 
+-----------*/
+
+  html {
+    font-size: 15px;
+  }
+
+  html::before {
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    background-size: 395px 350px;
+  }
+
+  html::after {
+    bottom: 0;
+    right: 0;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
+    background-size: 870px 585px;
+    background-position: bottom right;
+  }
+
+  .social-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 992px;
+    padding: 171px 48px;
+    background-image: none;
+    z-index: 1;
+  }
+
+  .site-description {
+    align-items: flex-start;
+    text-align: start;
+    width: 474px;
+  }
+
+  h1 {
+    line-height: 0.9;
+    font-size: 2.5rem;
+  }
+
+  .start-text-flex-desktop {
+    width: 422px;
+  }
+
+  .stars-text-flex {
+    flex-direction: row;
+    padding: 11px 45px;
+    margin-bottom: 14px;
+  }
+
+  .first-item {
+    margin-right: 120px;
+    margin-left: -70px;
+  }
+
+  .second-item {
+    margin-right: 57px;
+    margin-left: -15px;
+  }
+
+  .last-item {
+    margin-left: 42px;
+    margin-bottom: 0;
+  }
+
+  .reviews-stars img {
+    width: 14px;
+  }
+
+  .rated-text {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .second-row-flex {
+    margin-top: -39px;
+    gap: 30px;
+  }
+
+  .reviews-grid {
+    padding: 35px 30px;
+  }
+
+  .second-review {
+    margin-top: 17px;
+    margin-bottom: -17px;
+  }
+
+  .last-review {
+    margin-top: 34px;
+    margin-bottom: -34px;
+  }
+
+  .user-details img {
+    height: 34px;
+    width: 34px;
+  }
+
+  .user-name {
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*----------- 
+Common styles 
+-----------*/
+
+  .short-description,
+  .rated-text,
+  .reviews-grid {
+    font-size: 1rem;
+  }
+
+  .short-description,
+  .user-review {
+    margin-top: 20px;
+  }
+
+  /*----------- 
+Common styles 
+-----------*/
+
+  html::before {
+    background-size: 565px 350px;
+  }
+
+  html::after {
+    background-size: 960px 610px;
+  }
+
+  .social-section {
+    width: 1200px;
+    padding: 139px 99px;
+  }
+
+  .site-description {
+    width: 553px;
+  }
+
+  h1 {
+    width: 400px;
+    font-size: 3.1rem;
+  }
+
+  .short-description {
+    width: 360px;
+  }
+
+  .start-text-flex-desktop {
+    margin-top: 25px;
+    width: 449px;
+  }
+
+  .stars-text-flex {
+    padding: 13px 45px;
+  }
+
+  .reviews-stars img {
+    width: 15px;
+  }
+
+  .reviews-grid {
+    height: 220px;
+  }
+
+  .user-details img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /*----------- 
+Common styles 
+-----------*/
+
+  .short-description,
+  .rated-text,
+  .reviews-grid {
+    font-size: 1.13rem;
+  }
+
+  /*----------- 
+Common styles 
+-----------*/
+
+  html::before {
+    background-size: 600px 350px;
+  }
+
+  html::after {
+    background-size: 1070px 633px;
+  }
+
+  .social-section {
+    width: 1400px;
+    padding: 114px 150px;
+  }
+
+  .site-description {
+    width: 622px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .short-description {
+    width: 430px;
+  }
+
+  .start-text-flex-desktop {
+    margin-top: 27px;
+    width: 478px;
+  }
+
+  .stars-text-flex {
+    padding: 15px 45px;
+  }
+
+  .reviews-stars img {
+    width: 16px;
+  }
+
+  .reviews-grid {
+    height: 235px;
+  }
+
+  .user-details img {
+    height: 45px;
+    width: 45px;
+  }
+}
